@@ -1,4 +1,4 @@
-## Contribution Script for COMP3028 Software Construction
+## Contribution Script for Group Assignments Utilising Git
 
 This script will go through and review every file that is on the main and
 calculate the lines added and removed by each individual student, then 
