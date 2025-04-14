@@ -6,16 +6,24 @@ total a net line additions. It will also total the commits of each student
 on the `master`/`main` branch. The total weight is 75% for line additions
 and 25% for commits. 
 
-### Dependencies
+### Node Dependencies
 
-This is a Node.js script with no required modules. 
+This is a Node.js script using only core node modules. 
+
+### Python Dependencies
+
+This is a python script using only the python core library
 
 ### Running Contribution Script
 
 Once installed, you can run the script **within** a group repository root
 
 ```shell
-$ node contribution-scriptv2.1.mjs [output_prefix] [--no-csv]
+$ node contribution-scriptv2.2.mjs [output_prefix] [--no-csv]
+```
+
+```shell
+$ python3 contribution-scriptv2.2.py [output_prefix] [--no-csv]
 ```
 
 #### ARGUMENTS
@@ -59,7 +67,9 @@ repos at once with the following shell script:
 for i in group-project*; do 
     stripped_name=$(echo $i | sed 's/^group-project-[0-9][a-z]-//')
     (cd "$i" && 
-     node ../contribution-script/contribution-script.mjs "$stripped_name" && 
+     node ../contribution-script/contribution-scriptv2.2.mjs "$stripped_name" && 
      mv "${stripped_name}-contribution-summary.csv" ..)
 done
 ```
+
+*Substitute extension for desired language (\*.mjs | \*.py)*
