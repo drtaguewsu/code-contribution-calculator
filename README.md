@@ -48,7 +48,7 @@ This happens for a variety of reasons:
 Although the figure below is blured for privacy, it is clear who the contributors were in this repos/team, and it links to their registered
 GitHub Account or student ID associated with their github account. 
 
-![][contribution-values.png]
+![](contribution-values.png)
 
 ### Folder Parsing
 
