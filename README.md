@@ -35,7 +35,20 @@ There are two outputs:
 - [optional] CSV file place in the current directory `[groupname-]contribution-script`
 
 The total contribution output is a combination of overall code contribution (75%) and
-total commits contribution (25%). 
+total commit contribution (25%) to the **main** branch. 
+
+As this analysis tool performs analysis at a granular level, there may be more GitHub accounts listed than members within a respository or team. 
+This happens for a variety of reasons:
+
+- When a contribution is committed in the browser and so the account handle is slightly different.
+- A contributors local machine credentials are not complete, yet their authentication credentials are.
+- Teaching staff contribute. 
+- A GitHub bot contributes auto generated code
+
+Although the figure below is blured for privacy, it is clear who the contributors were in this repos/team, and it links to their registered
+GitHub Account or student ID associated with their github account. 
+
+![][contribution-values.png]
 
 ### Folder Parsing
 
